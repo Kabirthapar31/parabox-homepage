@@ -106,6 +106,20 @@ video {
     margin: auto auto 30px;
     color: #c4eaff;
 }
+.try-me {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #0ff; /* glowing cyan for now */
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.try-me:hover {
+    background: #0cc;
+}
+
 
 .product-image {
     width: 100%;
