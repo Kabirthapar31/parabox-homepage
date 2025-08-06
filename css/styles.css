@@ -16,22 +16,24 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 150px 20px 100px;
+    padding: 180px 20px 120px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     letter-spacing: 2px;
-    color: #ffffff;
-    margin-bottom: 10px;
+    color: #00ffe7;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px #00ffe7, 0 0 30px #00d0ff;
 }
 
 .hero h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 30px;
-    color: #ccc;
+    color: #a2f2ff;
+    text-shadow: 0 0 10px #5ddcff;
 }
 
 .cta-button {
@@ -73,14 +75,15 @@ video {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7;
 }
 
 #about p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto;
-    color: #dddddd;
+    color: #d4f9ff;
 }
 
 /* RAPHA AI Section */
@@ -93,19 +96,20 @@ video {
 #rapha h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #00ffe7;
+    text-shadow: 0 0 10px #00ffe7;
 }
 
 #rapha p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: auto auto 30px;
-    color: #cccccc;
+    color: #c4eaff;
 }
 
 .product-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
@@ -158,4 +162,14 @@ footer {
 
 .footer-links a:hover {
     color: #ffffff;
+}
+
+footer::after {
+    content: "\A Founders: Dr. Abhishek J Benur, Managing Director: Dr. Pranjal Dhir";
+    display: block;
+    color: #00ffe7;
+    font-weight: bold;
+    margin-top: 10px;
+    white-space: pre;
+    text-shadow: 0 0 5px #00ffe7;
 }
