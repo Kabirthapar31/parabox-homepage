@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Try RAPHA AI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero small-hero">
+    <h1>Try RAPHA AI</h1>
+    <h2>Upload a Chest X-ray for Analysis</h2>
+  </header>
+
+  <section class="upload-section">
+    <form id="upload-form" enctype="multipart/form-data">
+      <input type="file" name="cxrImage" accept="image/*" required />
+      <button type="submit">Analyze</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <script>
+    document.getElementById("upload-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("result").innerHTML = "🔬 RAPHA AI is analyzing the image...";
+      // Placeholder for backend or model integration
+      setTimeout(() => {
+        document.getElementById("result").innerHTML = "✅ Preliminary result: No abnormalities detected.";
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
