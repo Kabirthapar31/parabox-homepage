@@ -56,12 +56,12 @@ body {
     overflow: hidden;
     padding: 30px 0;
     background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
 }
 
 video {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
+    display: inline-block;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -109,13 +109,13 @@ video {
 
 .product-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
 }
 
-/* Trusted Section */
+/* Team Section */
 .trust-section {
     padding: 60px 20px;
     text-align: center;
@@ -123,26 +123,25 @@ video {
 }
 
 .trust-section h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.trust-logos {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.founder-details {
+    color: #f0f0f0;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
-.trust-logos img {
-    max-height: 80px;
-    filter: grayscale(100%);
-    transition: filter 0.3s;
+.founder-details a {
+    color: #6c63ff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.trust-logos img:hover {
-    filter: none;
+.founder-details a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -162,14 +161,4 @@ footer {
 
 .footer-links a:hover {
     color: #ffffff;
-}
-
-footer::after {
-    content: "\A Founders: Dr. Abhishek J Benur, Managing Director: Dr. Pranjal Dhir";
-    display: block;
-    color: #00ffe7;
-    font-weight: bold;
-    margin-top: 10px;
-    white-space: pre;
-    text-shadow: 0 0 5px #00ffe7;
 }
