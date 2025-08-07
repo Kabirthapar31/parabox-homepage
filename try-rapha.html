@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Try RAPHA AI</title>
+  <meta charset="UTF-8">
+  <title>ABG Interpreter - RAPHA AI</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="hero small-hero">
-    <h1>Try RAPHA AI</h1>
-    <h2>Upload a Chest X-ray for Analysis</h2>
+  <header class="hero">
+    <h1>Try RAPHA AI – ABG Interpreter</h1>
   </header>
 
-  <section class="upload-section">
-    <form id="upload-form" enctype="multipart/form-data">
-      <input type="file" name="cxrImage" accept="image/*" required />
-      <button type="submit">Analyze</button>
+  <section class="abg-form">
+    <form action="https://your-deployment-url.onrender.com/result" method="post">
+      <label for="ph">pH:</label>
+      <input type="text" name="ph" required><br>
+
+      <label for="pco2">pCO₂ (mmHg):</label>
+      <input type="text" name="pco2" required><br>
+
+      <label for="hco3">HCO₃⁻ (mEq/L):</label>
+      <input type="text" name="hco3" required><br>
+
+      <label for="na">Na⁺ (mEq/L):</label>
+      <input type="text" name="na"><br>
+
+      <label for="cl">Cl⁻ (mEq/L):</label>
+      <input type="text" name="cl"><br>
+
+      <label for="lactate">Lactate (mmol/L):</label>
+      <input type="text" name="lactate"><br>
+
+      <label for="po2">PaO₂ (mmHg):</label>
+      <input type="text" name="po2"><br>
+
+      <label for="fio2">FiO₂ (%):</label>
+      <input type="text" name="fio2"><br>
+
+      <label for="age">Patient Age (Years):</label>
+      <input type="text" name="age"><br>
+
+      <button type="submit" class="cta-button">Interpret ABG</button>
     </form>
-    <div id="result"></div>
   </section>
 
-  <script>
-    document.getElementById("upload-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      document.getElementById("result").innerHTML = "🔬 RAPHA AI is analyzing the image...";
-      // Placeholder for backend or model integration
-      setTimeout(() => {
-        document.getElementById("result").innerHTML = "✅ Preliminary result: No abnormalities detected.";
-      }, 2000);
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 PARABOX. All rights reserved.</p>
+  </footer>
 </body>
 </html>
